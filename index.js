@@ -2,9 +2,10 @@ const mongoose = require("mongoose");
 const genres = require("./routes/genres");
 const customers = require("./routes/customers");
 const Joi = require("joi");
-Joi.objectId = require("joi-objectid")(Joi);
+// Joi.objectId = require("joi-objectid")(Joi);
 const movies = require("./routes/movies");
 const rentals = require("./routes/rentals");
+const user = require("./routes/user")
 const express = require("express");
 const app = express();
 
@@ -18,6 +19,7 @@ app.use("/api/genres", genres);
 app.use("/api/customers", customers);
 app.use("/api/movies", movies);
 app.use("/api/rentals", rentals);
+app.use("/api/users", user);
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
