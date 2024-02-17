@@ -1,0 +1,4 @@
+{
+    // Defining a template for all the settings
+    "jwtPrivateKey": ""
+}
