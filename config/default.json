@@ -1,4 +1,4 @@
 {
-    // Defining a template for all the settings
-    "jwtPrivateKey": ""
+    "jwtPrivateKey": "",
+    "db" : "mongodb://localhost/vidly"
 }
